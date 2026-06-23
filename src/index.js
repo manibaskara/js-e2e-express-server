@@ -9,5 +9,6 @@ server.create()
     .then(app => {
         app.listen(port, hostname, () => {
             console.log(`Server has started on port ${port}!`);
+            console.log(`Server is running at http://${hostname}:${port}`);
         });
     }).catch(err => console.log(err));
